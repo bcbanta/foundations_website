@@ -1,0 +1,27 @@
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.headerlinks {
+    display:flex;
+    gap: 15px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+}
