@@ -21,15 +21,50 @@ body {
     gap: 15px;
 }
 
-.firstcontainer {
-  height: 600px;
+.footer {
+  color: #F9FAF8;
+  font-size: 24px;
+  background: #1F2937;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+
+.title {
+  font-size: 36px;
+  color:#1F2937;
+  font-weight: 900;
+}
+
+.container {
+  height: 450px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-evenly;
   gap: 40px;
   background-color: #1F2937;
-  
+}
+
+.container.second{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: white;
+}
+
+.container.third{
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  background-color: #E5E7EB;
+}
+
+.container.four {
+  display: flex;
+  background-color: white;
 }
 
 .herocontainer {
@@ -47,11 +82,42 @@ body {
   font-weight: 900;  
 }
 
-.herosecondary {
+.secondarytext {
   font-size: 18px;
+}
+
+.secondarytext.first {
   color: #E5E7EB;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 40px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  width:200px;
+  text-align: center;
+}
+
+.secondarytext.second {
+  color: #1F2937
+}
+
+.secondarytext.actionbox {
+  color: #E5E7EB;
+}
+
+.rounded-square {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  border: 5px solid #3882F6;
+}
 
 button {
   cursor: pointer;
@@ -67,6 +133,12 @@ button.signup {
   margin-top: 5px;
 }
 
+button.signup.actionbox {
+  border: 2px solid white;
+  font-weight: 300px;
+  padding: 8px 32px;
+}
+
 .imgcontainer {
   display:flex;
   flex-direction: column;
@@ -78,6 +150,56 @@ button.signup {
   background-color: grey;
   color:black;
   text-align: center;
+}
+
+.quote {
+  display:flex;
+  justify-content: flex-start;
+  font-size: 36px;
+  color:#1F2937;
+  font-style: italic;
+  font-weight: 300px;
+}
+
+.title.author {
+  display:flex;
+  justify-content: flex-end;
+  font-style:italic;
+  font-size:30px;
+}
+
+.title.actionbox {
+  display:flex;
+  justify-content: flex-start;
+  color: #F9FAF8;
+  font-size: 26px;
+  font-weight: 400px;
+}
+
+.testamonial_container {
+  width: 850px;
+  display:flex;
+  flex-direction:column;
+}
+
+/* make larger */
+.action_box {
+  display: flex;
+  padding-top: 70px;
+  padding-left:100px;
+  padding-bottom: 70px;
+  padding-right: 100px;
+  gap:200px;
+  /* border: 200 100 200 100; */
+  background-color: #3882F6;
+  border-radius: 10px;
+}
+
+.action_box_left {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
 
 a {
